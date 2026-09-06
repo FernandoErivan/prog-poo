@@ -1,7 +1,10 @@
 package ExercicioHeranca;
 public class MainHeranca {
     public static void main(String[] args) {
-        Empresa empresa = new Empresa();
+        Gerente gerente = new Gerente("Back-End", "Carlos", "288.323.533.12", 17.000);
+        
+        Empresa empresa = new Empresa(gerente);
+        
         Desenvolvedor dev = new Desenvolvedor("Galego", "272.545.535-15", 16990, "SQL");
         Desenvolvedor dev2 = new Desenvolvedor("Tranquilão", "783.948.433-00", 29990, "Java");
 

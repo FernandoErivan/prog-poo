@@ -3,9 +3,9 @@ package ExercicioHeranca;
 public class Funcionario {
     private String nome;
     private String cpf;
-    int salario;
+    private double salario;
 
-    Funcionario(String nome, String cpf, int salario){
+    Funcionario(String nome, String cpf, double salario){
         setNome(nome);
         setCpf(cpf);
         setSalario(salario);
@@ -19,7 +19,7 @@ public class Funcionario {
         return cpf;
     }
 
-    public int getSalario() {
+    public double getSalario() {
         return salario;
     }
 
@@ -31,14 +31,13 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
-    public void setSalario(int salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
     @Override
     public String toString() {
         return "Nome: " + this.getNome() +
-        "\nCPF: " + this.getCpf() +
-        "\nSALÁRIO: " + this.getCpf();
+        "\nCPF: " + this.getCpf();
     }
 }

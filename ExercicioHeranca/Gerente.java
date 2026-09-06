@@ -3,7 +3,7 @@ package ExercicioHeranca;
 public class Gerente extends Funcionario {
     private String departamento;
 
-    Gerente(String departamento, String nome, String cpf, int salario){
+    Gerente(String departamento, String nome, String cpf, double salario){
         super(nome, cpf, salario);
         setDepartamento(departamento);
     }
@@ -18,9 +18,6 @@ public class Gerente extends Funcionario {
 
     @Override
     public String toString() {
-        return "Nome Gerente: "+ this.getNome() +
-        "\ncpf: " + this.getCpf() +
-        "\nSalário: " + this.getSalario() +
-        "\nDepartamento: " + this.getDepartamento();
+        return "\nDepartamento: " + this.getDepartamento();
     }
 }
